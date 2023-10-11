@@ -1,0 +1,156 @@
+.container {
+
+
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.txtContainer {
+    flex: 1;
+}
+
+.imgContainer {
+    flex: 1;
+    height: 300px;
+    position: relative;
+}
+
+.userImgContainer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.userTxtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--softTextColor);
+}
+
+.date {
+    font-size: 12px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    gap: 50px;
+}
+
+.post {
+    flex: 5;
+    margin-top: 60px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .title {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 830px) {
+    
+    .infoContainer {
+        flex-direction: column-reverse;
+    }
+    .imgContainer {
+        flex: auto;
+        width: 100%;
+    }
+
+    .user {
+        flex-direction: row;
+    }
+
+    .title {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .txtContainer {
+        gap: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .userImgContainer {
+        height: 40px;
+        width: 40px;
+        position: relative;
+    }
+
+    .userTxtContainer {
+        gap: 5px;
+    }
+
+    .username {
+        font-size: 18px;
+    }
+
+    .post {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    .imgContainer {
+        flex: auto;
+        height: 250px;
+    }
+}
