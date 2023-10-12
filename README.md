@@ -7,4 +7,7 @@
 ![blog11](https://github.com/msitabheer20/BlogoPedia/assets/143608176/1902f8cd-2a8c-4bfb-97be-d19fd27d91d3)
 ![blog12](https://github.com/msitabheer20/BlogoPedia/assets/143608176/caaa2fda-c39b-4e9a-b033-20b91ab7d9ff)
 ![blog10](https://github.com/msitabheer20/BlogoPedia/assets/143608176/840ce0e2-a539-46ae-98e8-a3d47765df4e)
+![blog9](https://github.com/msitabheer20/BlogoPedia/assets/143608176/4f6da8e9-5858-41f8-8305-ce70a76d60ac)
+![blog7](https://github.com/msitabheer20/BlogoPedia/assets/143608176/cc64d04c-f79f-49e5-89fa-f4e7e6b43bb9)
+![blog8](https://github.com/msitabheer20/BlogoPedia/assets/143608176/b34f6fc5-3671-4fbf-b8b8-88c9859baf06)
 
