@@ -21,6 +21,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="bloglogo.png"
+        />
+      </head>
       <body className={roboto.className}>
         <AuthProvider>
           <ThemeContextProvider>

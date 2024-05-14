@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
-// import ReactQuill from "react-quill";
 import {
   getStorage,
   ref,
@@ -14,8 +13,7 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import dynamic from "next/dynamic";
-const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+import ReactQuill from "react-quill";
 
 const WritePage = () => {
   const { status } = useSession();
@@ -44,10 +42,10 @@ const WritePage = () => {
           // console.log("Upload is " + progress + "% done");
           switch (snapshot.state) {
             case "paused":
-              console.log("Upload is paused");
+              // console.log("Upload is paused");
               break;
             case "running":
-              console.log("Upload is running");
+              // console.log("Upload is running");
               break;
           }
         },
@@ -80,7 +78,7 @@ const WritePage = () => {
       .replace(/^-+|-+$/g, "");
 
   const handleSubmit = async () => {
-    const res = await fetch("http://localhost:3000/api/posts", {
+    const res = await fetch("/api/posts", {
       method: "POST",
       body: JSON.stringify({
         title,
@@ -127,7 +125,7 @@ const WritePage = () => {
             />
             <button className={styles.addButton}>
               <label htmlFor="image">
-                <Image src="/image1.png" alt="" width={16} height={16} />
+                <Image src="/image.png" alt="" width={16} height={16} />
               </label>
             </button>
             <button className={styles.addButton}>

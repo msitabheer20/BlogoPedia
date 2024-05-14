@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from './card.module.css'
 import Link from 'next/link'
-import { Instrument_Sans } from 'next/font/google'
 
 const Card = ({ key, item }) => {
     return (
@@ -19,7 +18,7 @@ const Card = ({ key, item }) => {
                 <Link href={`/posts/${item.slug}`}>
                     <h1 className={styles.title}>{item.title}</h1>
                 </Link>
-                <p className={styles.desc}>{item.desc.substring(0, 60)}</p>
+                <p className={styles.desc} dangerouslySetInnerHTML={{ __html: item.desc.substring(0, 60)}}></p>
                 <Link href={`/posts/${item.slug}`} className={styles.link}>Read More</Link>
             </div>
         </div>

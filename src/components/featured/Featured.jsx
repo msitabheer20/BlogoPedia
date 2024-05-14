@@ -1,17 +1,29 @@
+"use client"
 import React from 'react'
 import styles from './featured.module.css'
+import { useSession } from "next-auth/react";
 import Image from 'next/image'
 
 const Featured = () => {
+  const { data, status } = useSession();
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-      <h3>Hey, Abheer Here!</h3> 
-      <h2>Discover my stories and creative ideas : )</h2>
+      {data ? 
+        <>
+          <h3>Hey, {data?.user.name.split(' ')[0] + " Here!"}</h3>
+          <h2>Discover my stories and creative ideas : )</h2> : 
+        </> :
+      <>
+        <h3>Hey, Love Blogging ?</h3>
+        <h2>Share Your Mind with the World ( :</h2>
+      </>
+      }
+      
       </div>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="" fill className={styles.image}/>
+          <Image src="/main.jpeg" alt="" fill className={styles.image}/>
         </div>
         <div className={styles.txtContainer}>
           <h1 className={styles.postTitle}>Welcome to Blogopedia, Where Ideas Come to Life!</h1>
