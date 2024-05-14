@@ -1,36 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# BLOGOPEDIA : A FULL STACK BLOGGING APPLICATION USING NEXT.JS
+![blog1](https://github.com/msitabheer20/BlogoPedia/assets/143608176/38ed0295-d950-4d27-ad74-07c8727efefc)
+![blog2](https://github.com/msitabheer20/BlogoPedia/assets/143608176/3676fcb5-542a-4c61-9db0-2789937fbacf)
+![blog3](https://github.com/msitabheer20/BlogoPedia/assets/143608176/5b6a1bed-f882-4fb2-a476-13636555c9b2)
+![blog4](https://github.com/msitabheer20/BlogoPedia/assets/143608176/a09ff75b-829d-4bab-8364-1d978518284c)
+![blog5](https://github.com/msitabheer20/BlogoPedia/assets/143608176/4830ecd2-9ae2-41dc-af1c-ce3365fb53d2)
+![blog6](https://github.com/msitabheer20/BlogoPedia/assets/143608176/a59a2eeb-06f1-4fa1-877b-3182ac6b7adc)
+![blog7](https://github.com/msitabheer20/BlogoPedia/assets/143608176/458ebe90-c7a3-44fd-8040-1173e710308d)
+![blog8](https://github.com/msitabheer20/BlogoPedia/assets/143608176/3b62e31c-7f51-412b-bd23-d1adf3adb404)
+![blog9](https://github.com/msitabheer20/BlogoPedia/assets/143608176/cd1ba4e0-6432-4d81-aac2-334caa262928)
+![blog10](https://github.com/msitabheer20/BlogoPedia/assets/143608176/ee8a3c74-0734-4ac5-881b-16727f274921)
+![blog11](https://github.com/msitabheer20/BlogoPedia/assets/143608176/5ded5e3d-47a5-4867-ac5d-c777eff0f4b9)
+![blog12](https://github.com/msitabheer20/BlogoPedia/assets/143608176/4a3e0176-342c-418c-8b54-64f9d2284b50)
