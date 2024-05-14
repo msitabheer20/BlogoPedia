@@ -13,7 +13,7 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import ReactQuill from "react-quill";
+// import ReactQuill from "react-quill";
 
 const WritePage = () => {
   const { status } = useSession();
@@ -136,14 +136,17 @@ const WritePage = () => {
             </button>
           </div>
         )}
-        <ReactQuill
+            <span>{file?.name}</span>
+        {/* <ReactQuill
           className={styles.textArea}
           theme="bubble"
           value={value}
           onChange={setValue}
           placeholder="Tell your story..."
-        />
+        /> */}
       </div>
+        <textarea className={styles.textArea} id="story" name="story" rows="5" cols="33" placeholder="Tell You story here..." value={value} onChange={(e) => setValue(e.target.value)}>
+        </textarea>
       <button className={styles.publish} onClick={handleSubmit}>
         Publish
       </button>

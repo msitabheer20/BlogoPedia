@@ -14,7 +14,7 @@
   .editor {
     display: flex;
     gap: 20px;
-    height: 700px;
+    margin-bottom: 20px;
     position: relative;
   }
   
@@ -59,7 +59,15 @@
   }
   
   .textArea {
-    width: 100%;
+    width: 96%;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    height: 500px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    resize: none;
   }
   
   .publish{
