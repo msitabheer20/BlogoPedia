@@ -1,4 +1,5 @@
 # BLOGOPEDIA : A FULL STACK BLOGGING APPLICATION USING NEXT.JS
+[Live Link] : https://bloggingpedia.netlify.app
 ![blog1](https://github.com/msitabheer20/BlogoPedia/assets/143608176/38ed0295-d950-4d27-ad74-07c8727efefc)
 ![blog2](https://github.com/msitabheer20/BlogoPedia/assets/143608176/3676fcb5-542a-4c61-9db0-2789937fbacf)
 ![blog3](https://github.com/msitabheer20/BlogoPedia/assets/143608176/5b6a1bed-f882-4fb2-a476-13636555c9b2)
