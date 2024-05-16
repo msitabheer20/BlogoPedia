@@ -7,7 +7,6 @@
   .select{
     margin-bottom: 50px;
     padding: 10px 20px;
-    margin-left: 50px;
     width: max-content;
   }
   
@@ -46,7 +45,7 @@
   }
   
   .input{
-    padding: 50px;
+    padding: 50px 0px;
     font-size: 64px;
     border: none;
     outline: none;
@@ -59,15 +58,17 @@
   }
   
   .textArea {
-    width: 96%;
+    width: 100%;
     font-size: 30px;
     outline: none;
-    border: none;
+    /* border: none; */
     height: 500px;
-    margin-left: 50px;
     padding: 20px;
     border-radius: 20px;
     resize: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--bg);
+    color: var(--textColor);
   }
   
   .publish{
@@ -81,3 +82,47 @@
     cursor: pointer;
     border-radius: 20px;
   }
+
+@media screen and (max-width: 1200px) {
+  .textArea {
+    width: 100%;
+    font-size: 30px;
+    outline: none;
+    /* border: none; */
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    resize: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--bg);
+    color: var(--textColor);
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .input {
+    font-size: 50px;
+  }
+  .textArea {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .input {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .input {
+    font-size: 35px;
+  }
+  .textArea {
+    font-size: 15px;
+    height: 400px;
+    padding: 20px;
+  }
+}

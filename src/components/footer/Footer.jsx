@@ -12,7 +12,7 @@ const Footer = () => {
           <Image src="/bloglogo.png" alt="" width={50} height={50} className={styles.logoImg}/>
            <h1 className={styles.logoTxt}>BlogoPedia</h1>
         </div>
-        <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facilis deserunt voluptates beatae vero. Pariatur quam repellendus minus animi rerum ex nobis voluptates! Esse doloremque dicta magni, aspernatur explicabo sequi.</p>
+        <p className={styles.desc}>Life is not a perfectly curated Instagram feed; its messy, unpredictable, and wonderfully imperfect. Embracing the chaos allows us to find beauty in the unfiltered moments, the unplanned adventures, and the spontaneous laughter.</p>
         <Social width={18} height={18} />
       </div>
       <div className={styles.links}>

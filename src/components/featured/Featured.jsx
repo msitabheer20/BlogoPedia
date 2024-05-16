@@ -12,7 +12,7 @@ const Featured = () => {
       {data ? 
         <>
           <h3>Hey, {data?.user.name.split(' ')[0] + " Here!"}</h3>
-          <h2>Discover my stories and creative ideas : )</h2> : 
+          <h2>Discover my stories and creative ideas : )</h2>
         </> :
       <>
         <h3>Hey, Love Blogging ?</h3>

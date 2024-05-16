@@ -19,7 +19,7 @@ const SinglePage = async({params}) => {
 
   const { slug } = params;
   const data = await getData(slug);
-
+  console.log(data)
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
@@ -33,7 +33,7 @@ const SinglePage = async({params}) => {
           )}
             <div className={styles.userTxtContainer}>
               <span className={styles.username}>{data?.user.name}</span>
-              <span className={styles.date}>01.01.2024</span>
+              <span className={styles.date}>{data.createdAt.substring(0,10)}</span>
             </div>
           </div>
         </div>

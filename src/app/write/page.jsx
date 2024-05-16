@@ -5,6 +5,7 @@ import styles from "./writePage.module.css";
 import { useEffect, useState } from "react";
 import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
+import { toast } from 'react-hot-toast';
 import { useSession } from "next-auth/react";
 import {
   getStorage,
@@ -78,6 +79,7 @@ const WritePage = () => {
       .replace(/^-+|-+$/g, "");
 
   const handleSubmit = async () => {
+    if(title === "") return toast.error("Whoops! Add a title please");
     const res = await fetch("/api/posts", {
       method: "POST",
       body: JSON.stringify({
@@ -85,12 +87,12 @@ const WritePage = () => {
         desc: value,
         img: media,
         slug: slugify(title),
-        catSlug: catSlug || "style", //If not selected, choose the general category
+        catSlug: catSlug || "style",
       }),
     });
-
     if (res.status === 200) {
       const data = await res.json();
+      toast.success("Blog added Successfully!")
       router.push(`/posts/${data.slug}`);
     }
   };
@@ -99,7 +101,7 @@ const WritePage = () => {
     <div className={styles.container}>
       <input
         type="text"
-        placeholder="Title"
+        placeholder="ADD A TITLE"
         className={styles.input}
         onChange={(e) => setTitle(e.target.value)}
       />

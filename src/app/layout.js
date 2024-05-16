@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter, Roboto } from 'next/font/google'
+import { Toaster } from "react-hot-toast";
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
 import { ThemeContextProvider } from '@/context/ThemeContext'
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
               <div className="container">
                 <div className="wrapper">
                   <Navbar />
+                  <Toaster position="top-right" />
                   {children}
                   <Footer />
                 </div>
