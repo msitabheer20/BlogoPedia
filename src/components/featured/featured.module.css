@@ -28,6 +28,7 @@
 .image {
     object-fit: cover;
     border-radius: 10px;
+    object-position: top;
 }
 
 .txtContainer {
